@@ -1,0 +1,158 @@
+nav .homelink {
+  font-weight: bold;
+  text-decoration: underline ;
+  
+}
+nav{
+  padding: 2em;
+}
+nav a{
+  color: #f2f2f2;
+  text-decoration:none;
+}
+
+nav a:click{
+  font-weight: bold;
+  text-decoration: underline ;
+}
+body{
+  font-family: 'Raleway', sans-serif; 
+  margin: 2em;
+  padding: 0;
+  font-size: 1em; 
+  /*background-image: url('../images/concrete_seamless.png');*/
+}
+
+h1{
+  font-size: 2em;
+  text-align: center;
+  line-height: 2;
+}
+
+h2{
+  font-size: 1.5em;
+  text-align: center;
+  padding: 5px;
+}
+
+p {
+  padding: 30px 30px;
+  text-align: center;
+}
+
+img{
+  align-items: center;
+  margin: 2em;
+  
+}
+a.skip{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+a.skip:focus{
+  top:20px;
+  color: black;
+  text-decoration-style: solid;
+}
+
+*:focus{
+  border: 2px solid black;
+}
+
+footer{
+  background-color: #0D294B;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+footer a{
+  color: white;
+}
+
+/*Begin your code here*/
+/*Keyframes for animation*/
+
+@-webkit-keyframes logo_wiggle{
+  /*Your code here.*/
+  from {width: 2em;}
+  to {width: 21em;}
+}
+
+@keyframes logo_wiggle{
+  from {width: 2em;}
+  to {width: 21em;} 
+}
+
+#logo{
+   /*Your code here.*/
+   animation: logo_wiggle 15s;
+}
+
+/* Navbar */
+header{
+  background-color: #0D294B;
+  color: #FFDE59;
+  border-bottom: 3px solid #FFDE59;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li{
+  /*Your code here again.*/
+  display: flex;
+  flex-direction: column;
+  display: inline;
+}
+
+nav a{
+  color: white;
+  text-decoration: none;
+}
+
+nav a:click, a:focus{
+  color: #FFDE59;
+  text-decoration: underline;
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+}
+
+@media screen and (min-width: 850px){
+
+
+  /* Navbar */
+  header{
+    /*Your code here again.*/  
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: space-between;
+    background-color: #0D294B;
+
+  }
+
+  .nav_links{
+    /*Your code here again.*/ 
+    flex-direction: row;
+    justify-content: flex-end;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  nav a{
+    padding: 10px;
+  }
+
+@media (prefers-reduced-motion:reduce) {
+  #logo{
+    /*Your code here.*/
+    animation: none;
+ }

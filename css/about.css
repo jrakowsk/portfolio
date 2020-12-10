@@ -1,0 +1,219 @@
+nav .aboutlink {
+  font-weight: bold;
+  text-decoration: underline ;
+  
+}
+nav{
+  padding: 2em;
+}
+nav a{
+  color: #f2f2f2;
+  text-decoration:none;
+}
+
+nav a:click{
+  font-weight: bold;
+  text-decoration: underline ;
+}
+
+nav li{
+  display: flex;
+  flex-direction: column;
+  display: inline;
+}
+
+body{
+  font-family: 'Raleway', sans-serif; 
+  margin: 0;
+  padding: 0;
+  font-size: 1em; 
+}
+
+h1{
+  font-size: 2em;
+  text-align: center;
+  line-height: 2;
+}
+
+p {
+  padding: 0 30px;
+}
+.about{
+  border: 10px #FFDE59 solid;
+  margin: 1em;
+  padding: 1em;
+  min-height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.about > img{
+  border: 10px #FFDE59 solid;
+  margin: 10px;
+  width: 300px;
+}
+a.skip{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+a.skip:focus{
+  top:20px;
+  color: black;
+  text-decoration-style: solid;
+}
+
+*:focus{
+  border: 2px solid black;
+}
+
+footer{
+  background-color: #0D294B;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+footer a{
+  color: white;
+}
+/*Begin your code here*/
+/*Keyframes for animation*/
+
+@-webkit-keyframes logo_wiggle{
+  /*Your code here.*/
+  from {width: 25px;}
+  to {width: 420px;}
+}
+
+@keyframes logo_wiggle{
+  from {width: 25px;}
+  to {width: 420px;}
+} 
+
+#logo{
+   /*Your code here.*/
+   animation: logo_wiggle 15s;
+}
+
+/* Gallery! */
+.gallery{
+  min-height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery > img{
+  border: 10px #FFDE59 solid;
+  margin: 10px;
+  width: 300px;
+}
+
+/* Navbar */
+header{
+  background-color: #0D294B;
+  color: #FFDE59;
+  border-bottom: 3px solid #FFDE59;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav{
+  /*Your code here again.*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  nav li{
+    /*Your code here again.*/
+    display: flex;
+    flex-direction: column;
+    display: inline;
+  }
+
+
+nav a{
+  color: white;
+  text-decoration: none;
+}
+
+nav a:click, a:focus a:visited{
+  color: #FFDE59;
+  text-decoration: underline;
+  font-weight: bold;
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+}
+
+@media screen and (min-width: 850px){
+
+  /* Cards! */
+  .card {
+    flex-basis: 225px;
+
+  }
+
+  .card_big{
+    -webkit-transform: scaleX(1.12);
+            transform: scaleX(1.12);
+  }
+
+  /* Navbar */
+  header{
+    /*Your code here again.*/  
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: space-between;
+
+  }
+
+  .nav_links{
+    /*Your code here again.*/ 
+    flex-direction: row;
+    justify-content: flex-end;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .nav_item a{
+    padding: 10px;
+  }
+
+  .about{
+    border: 10px #FFDE59 solid;
+    border-left: 10px #FFDE59 solid;
+    margin: 10px;
+   
+  }
+  
+  .about > header{
+    background: #FFDE59;
+    border: 2px solid #FFDE59;
+    padding: 20px 0;
+    border-radius: 7px 7px 0 0;
+  }
+  
+  
+  .about{
+    min-height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  #logo{
+    /*Your code here.*/
+    animation: none;
+ }
+}
